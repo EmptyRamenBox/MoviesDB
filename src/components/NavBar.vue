@@ -1,6 +1,9 @@
 <template>
   <v-app-bar app clipped-left dark color="red darken-3">
-    <v-app-bar-nav-icon @click="drawer ? hideDrawer() : showDrawer()" />
+    <v-app-bar-nav-icon
+      v-if="user"
+      @click="drawer ? hideDrawer() : showDrawer()"
+    />
     <v-toolbar-title to="/" class="font-weight-light">
       <span>Movies</span>
       <span class="font-weight-regular">DB</span>
@@ -15,7 +18,8 @@ export default {
   name: "NavBar",
   computed: {
     ...mapGetters({
-      drawer: "getDrawer"
+      drawer: "getDrawer",
+      user: "getUser"
     })
   },
   methods: {

@@ -1,19 +1,32 @@
 <template>
-  <v-card
-    color="amber darken-2"
-    max-width="400"
-    class="mx-auto"
-    min-height="300"
+  <v-parallax
+    src="../assets/login_back.jpg"
+    height="1080"
+    width="1920"
+    jumbotron
   >
-    <v-layout
-      justify-center
-      color="blue-grey lighten-1"
-      max-width="400"
-      max-height="300"
+    <v-card
+      color="amber darken-2"
+      max-width="600"
+      class="mx-auto"
+      min-height="400"
     >
-      <div id="firebaseui-auth-container" class="mt-8 justify-center"></div
-    ></v-layout>
-  </v-card>
+      <v-layout
+        justify-center
+        min-width="400"
+        min-height="300"
+        color="blue-grey darken-4"
+      >
+        <div class="mt-12 ml-8">
+          <h3>EmptyRamenBox's</h3>
+          <h1>MoviesDB</h1>
+        </div>
+        <div class="mt-12">
+          <div id="firebaseui-auth-container"></div>
+        </div>
+      </v-layout>
+    </v-card>
+  </v-parallax>
 </template>
 
 <script>
