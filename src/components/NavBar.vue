@@ -1,8 +1,6 @@
 <template>
   <div>
-    <v-navigation-drawer app>
-      <h1>NavBar</h1>
-    </v-navigation-drawer>
+    <v-app-bar app>NavBar</v-app-bar>
   </div>
 </template>
 

@@ -1,9 +1,7 @@
 <template class="themes">
   <v-app>
     <NavBar />
-
-    <v-app-bar app></v-app-bar>
-
+    <Drawer />
     <v-content>
       <v-container fluid>
         <router-view></router-view>
@@ -14,11 +12,13 @@
 
 <script>
 import NavBar from "./components/NavBar.vue";
+import Drawer from "@/components/Drawer.vue";
 
 export default {
   name: "App",
   components: {
-    NavBar
+    NavBar,
+    Drawer
   }
 };
 </script>
