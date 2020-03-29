@@ -1,6 +1,6 @@
-<template>
+<template class="themes">
   <v-app>
-    <v-navigation-drawer app></v-navigation-drawer>
+    <NavBar />
 
     <v-app-bar app></v-app-bar>
 
@@ -13,7 +13,12 @@
 </template>
 
 <script>
+import NavBar from "./components/NavBar.vue";
+
 export default {
-  name: "App"
+  name: "App",
+  components: {
+    NavBar
+  }
 };
 </script>
