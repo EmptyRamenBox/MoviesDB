@@ -1,13 +1,14 @@
 <template>
-  <div>
-    <v-navigation-drawer app>
-      <h1>Drawer</h1>
-    </v-navigation-drawer>
-  </div>
+  <v-navigation-drawer :value="drawer" app clipped color="amber darken-2"></v-navigation-drawer>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
-  name: "Drawer"
+  name: "Drawer",
+  computed: {
+    ...mapGetters({ drawer: "getDrawer" })
+  }
 };
 </script>
