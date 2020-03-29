@@ -4,6 +4,9 @@ import router from "./router";
 import store from "./store";
 import vuetify from "./plugins/vuetify";
 
+// Import Firebase for Authentication
+import "./plugins/firebase.js";
+
 Vue.config.productionTip = false;
 
 new Vue({
