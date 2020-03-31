@@ -6,6 +6,8 @@ import vuetify from "./plugins/vuetify";
 
 // Import Firebase for Authentication
 import "./plugins/firebase.js";
+// Import Axios
+import "./plugins/axios.js";
 
 Vue.config.productionTip = false;
 
