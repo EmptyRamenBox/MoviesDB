@@ -1,22 +1,7 @@
 <template>
-  <v-parallax
-    src="../assets/login_back.jpg"
-    height="1080"
-    width="1920"
-    jumbotron
-  >
-    <v-card
-      color="amber darken-2"
-      max-width="600"
-      class="mx-auto"
-      min-height="400"
-    >
-      <v-layout
-        justify-center
-        min-width="400"
-        min-height="300"
-        color="blue-grey darken-4"
-      >
+  <v-parallax src="../assets/login_back.jpg" height="850" width="1920" jumbotron>
+    <v-card color="amber darken-2" max-width="600" class="mx-auto" min-height="400">
+      <v-layout justify-center min-width="400" min-height="300" color="blue-grey darken-4">
         <div class="mt-12 ml-8">
           <h3>EmptyRamenBox's</h3>
           <h1>MoviesDB</h1>
